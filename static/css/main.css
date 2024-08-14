@@ -1,0 +1,242 @@
+:root {
+    --deep-navy-blue: #1A2A3A;
+    --soft-coral: #FF6B6B;
+    --muted-teal: #4ECDC4;
+    --light-gray: #F4F4F4;
+}
+
+body {
+    font-family: 'Inter', sans-serif;
+    line-height: 1.6;
+    color: var(--deep-navy-blue);
+    margin: 0;
+    padding: 0;
+}
+
+.container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 20px;
+}
+
+/* Header styles */
+.site-header {
+    background-color: white;
+    box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+    padding: 1rem 0;
+}
+
+.site-header .container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.logo {
+    font-size: 1.5rem;
+    font-weight: bold;
+    color: var(--deep-navy-blue);
+    text-decoration: none;
+}
+
+.site-nav a {
+    color: var(--deep-navy-blue);
+    text-decoration: none;
+    margin-left: 1rem;
+}
+
+.site-nav a:hover {
+    color: var(--soft-coral);
+}
+
+.menu-toggle {
+    display: none;
+}
+
+/* Hero section */
+.hero {
+    background-color: var(--light-gray);
+    padding: 4rem 0;
+    text-align: center;
+}
+
+.hero-card {
+    background-color: var(--deep-navy-blue);
+    color: white;
+    padding: 3rem;
+    border-radius: 20px;
+    position: relative;
+    overflow: hidden;
+    max-width: 800px;
+    margin: 0 auto 2rem;
+}
+
+.hero-card h1 {
+    font-size: 2.5rem;
+    margin-bottom: 1rem;
+    line-height: 1.2;
+}
+
+.hero-card p {
+    font-size: 1.2rem;
+    margin-bottom: 2rem;
+}
+
+.card-decoration {
+    position: absolute;
+    top: 20px;
+    right: 20px;
+    width: 60px;
+    height: 60px;
+    border-radius: 50%;
+    background-color: var(--soft-coral);
+}
+
+.hero-card::before {
+    content: '';
+    position: absolute;
+    bottom: 20px;
+    left: 20px;
+    width: 40px;
+    height: 40px;
+    background-color: var(--muted-teal);
+}
+
+.cta-button {
+    display: inline-block;
+    background-color: var(--soft-coral);
+    color: white;
+    padding: 0.75rem 1.5rem;
+    text-decoration: none;
+    border-radius: 4px;
+    font-weight: bold;
+    font-size: 1.1rem;
+}
+
+.cta-button:hover {
+    background-color: var(--muted-teal);
+}
+
+/* Framework overview */
+.framework-overview {
+    padding: 4rem 0;
+}
+
+.framework-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 2rem;
+}
+
+.framework-item {
+    border: 1px solid var(--light-gray);
+    border-radius: 8px;
+    padding: 1.5rem;
+}
+
+.framework-item h3 {
+    color: var(--deep-navy-blue);
+    margin-bottom: 1rem;
+}
+
+.framework-item ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+.framework-item li {
+    margin-bottom: 0.5rem;
+    position: relative;
+    padding-left: 1.5rem;
+}
+
+.framework-item li::before {
+    content: '>';
+    position: absolute;
+    left: 0;
+    color: var(--muted-teal);
+}
+
+/* Latest posts */
+.latest-posts {
+    background-color: var(--light-gray);
+    padding: 4rem 0;
+}
+
+.post-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 2rem;
+}
+
+.post-card {
+    background-color: white;
+    border-radius: 8px;
+    padding: 1.5rem;
+    box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+}
+
+.post-card h3 {
+    margin-bottom: 1rem;
+}
+
+.read-more {
+    color: var(--soft-coral);
+    text-decoration: none;
+    font-weight: bold;
+}
+
+/* CTA section */
+.cta-section {
+    background-color: var(--deep-navy-blue);
+    color: white;
+    padding: 4rem 0;
+    text-align: center;
+}
+
+/* Footer */
+.site-footer {
+    background-color: var(--deep-navy-blue);
+    color: white;
+    padding: 2rem 0;
+    text-align: center;
+}
+
+/* Responsive design */
+@media (max-width: 768px) {
+    .site-nav {
+        display: none;
+    }
+
+    .menu-toggle {
+        display: block;
+        background: none;
+        border: none;
+        font-size: 1.5rem;
+        cursor: pointer;
+    }
+
+    .framework-grid, .post-grid {
+        grid-template-columns: 1fr;
+    }
+}
+
+.logo {
+    display: flex;
+    align-items: center;
+    font-size: 1.5rem;
+    font-weight: bold;
+    color: var(--deep-navy-blue);
+    text-decoration: none;
+}
+
+.logo-image {
+    width: 24px;
+    height: 24px;
+    margin-right: 8px;
+}
+
+.logo-text {
+    font-size: 1.5rem;
+    font-weight: bold;
+}

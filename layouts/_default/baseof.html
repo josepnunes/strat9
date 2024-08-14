@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>{{ if .IsHome }}{{ .Site.Title }}{{ else }}{{ .Title }} - {{ .Site.Title }}{{ end }}</title>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="{{ "css/main.css" | relURL }}">
+</head>
+<body>
+    <header class="site-header">
+        <div class="container">
+            <a href="/" class="logo">
+                <img src="{{ "images/strat9-logo.svg" | relURL }}" alt="Strat9 Logo" class="logo-image">
+                <span class="logo-text">Strat9</span>
+            </a>
+            <nav class="site-nav">
+                <a href="/about">About</a>
+                <a href="/framework">Framework</a>
+                <a href="/blog">Blog</a>
+                <a href="/resources">Resources</a>
+                <a href="/contact">Contact</a>
+            </nav>
+            <button class="menu-toggle">☰</button>
+        </div>
+    </header>
+    <main>
+        {{ block "main" . }}{{ end }}
+    </main>
+    <footer class="site-footer">
+        <div class="container">
+            <p>&copy; {{ now.Year }} Strat9. All rights reserved.</p>
+        </div>
+    </footer>
+</body>
+</html>

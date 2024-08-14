@@ -1,0 +1,53 @@
+{{ define "main" }}
+<section class="hero">
+    <div class="container">
+        <div class="hero-card">
+            <h1>A Framework for Engineering Leadership</h1>
+            <p>Sharing insights and experiences in engineering leadership</p>
+            <div class="card-decoration"></div>
+        </div>
+        <a href="/framework" class="cta-button">Explore Strat9</a>
+    </div>
+</section>
+
+<section class="framework-overview">
+    <div class="container">
+        <h2>The Strat9 Framework</h2>
+        <div class="framework-grid">
+            {{ range slice "People" "Delivery/Value" "Tech" }}
+            <div class="framework-item">
+                <h3>{{ . }}</h3>
+                <ul>
+                    {{ range slice "Strategy & Goals" "Execution" "Tracking" }}
+                    <li>{{ . }}</li>
+                    {{ end }}
+                </ul>
+            </div>
+            {{ end }}
+        </div>
+    </div>
+</section>
+
+<section class="latest-posts">
+    <div class="container">
+        <h2>Latest Insights</h2>
+        <div class="post-grid">
+            {{ range first 3 (where .Site.RegularPages "Section" "blog") }}
+            <div class="post-card">
+                <h3><a href="{{ .Permalink }}">{{ .Title }}</a></h3>
+                <p>{{ .Summary }}</p>
+                <a href="{{ .Permalink }}" class="read-more">Read More</a>
+            </div>
+            {{ end }}
+        </div>
+    </div>
+</section>
+
+<section class="cta-section">
+    <div class="container">
+        <h2>Ready to Transform Your Engineering Leadership?</h2>
+        <p>Join our community and get exclusive insights on applying the Strat9 framework.</p>
+        <a href="/contact" class="cta-button">Sign Up for Updates</a>
+    </div>
+</section>
+{{ end }}
