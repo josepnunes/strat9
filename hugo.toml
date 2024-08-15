@@ -1,3 +1,5 @@
 baseURL = 'https://www.strat9.io/'
 languageCode = 'en-us'
 title = 'Strat9'
+[permalinks]
+  blog = "/blog/:slug/"

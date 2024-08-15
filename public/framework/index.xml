@@ -1,20 +1,13 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes"?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
-    <title>Strat9</title>
-    <link>http://localhost:1313/</link>
-    <description>Recent content on Strat9</description>
+    <title>Strat9 Framework on Strat9</title>
+    <link>http://localhost:1313/framework/</link>
+    <description>Recent content in Strat9 Framework on Strat9</description>
     <generator>Hugo</generator>
     <language>en-us</language>
     <lastBuildDate>Wed, 14 Aug 2024 00:00:00 +0000</lastBuildDate>
-    <atom:link href="http://localhost:1313/index.xml" rel="self" type="application/rss+xml" />
-    <item>
-      <title>About Strat9</title>
-      <link>http://localhost:1313/about/</link>
-      <pubDate>Wed, 14 Aug 2024 00:00:00 +0000</pubDate>
-      <guid>http://localhost:1313/about/</guid>
-      <description>Write about the origins of Strat9, background, and the goals of the framework.</description>
-    </item>
+    <atom:link href="http://localhost:1313/framework/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>Delivery Pillar</title>
       <link>http://localhost:1313/framework/delivery/</link>
