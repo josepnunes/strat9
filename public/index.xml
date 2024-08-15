@@ -2,38 +2,45 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Strat9</title>
-    <link>http://localhost:1313/</link>
+    <link>//localhost:1313/</link>
     <description>Recent content on Strat9</description>
     <generator>Hugo</generator>
     <language>en-us</language>
     <lastBuildDate>Wed, 14 Aug 2024 00:00:00 +0000</lastBuildDate>
-    <atom:link href="http://localhost:1313/index.xml" rel="self" type="application/rss+xml" />
+    <atom:link href="//localhost:1313/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>About Strat9</title>
-      <link>http://localhost:1313/about/</link>
+      <link>//localhost:1313/about/</link>
       <pubDate>Wed, 14 Aug 2024 00:00:00 +0000</pubDate>
-      <guid>http://localhost:1313/about/</guid>
+      <guid>//localhost:1313/about/</guid>
       <description>Write about the origins of Strat9, background, and the goals of the framework.</description>
     </item>
     <item>
       <title>Delivery Pillar</title>
-      <link>http://localhost:1313/framework/delivery/</link>
+      <link>//localhost:1313/framework/delivery/</link>
       <pubDate>Wed, 14 Aug 2024 00:00:00 +0000</pubDate>
-      <guid>http://localhost:1313/framework/delivery/</guid>
+      <guid>//localhost:1313/framework/delivery/</guid>
       <description>Detailed explanation of the Delivery pillar in the Strat9 framework.</description>
     </item>
     <item>
-      <title>People Pillar</title>
-      <link>http://localhost:1313/framework/people/</link>
+      <title>Introduction to Strat9</title>
+      <link>//localhost:1313/blog/introduction-to-strat9/</link>
       <pubDate>Wed, 14 Aug 2024 00:00:00 +0000</pubDate>
-      <guid>http://localhost:1313/framework/people/</guid>
+      <guid>//localhost:1313/blog/introduction-to-strat9/</guid>
+      <description>This is a sample blog post introducing Strat9.</description>
+    </item>
+    <item>
+      <title>People Pillar</title>
+      <link>//localhost:1313/framework/people/</link>
+      <pubDate>Wed, 14 Aug 2024 00:00:00 +0000</pubDate>
+      <guid>//localhost:1313/framework/people/</guid>
       <description>Detailed explanation of the People pillar in the Strat9 framework.</description>
     </item>
     <item>
       <title>Tech Pillar</title>
-      <link>http://localhost:1313/framework/tech/</link>
+      <link>//localhost:1313/framework/tech/</link>
       <pubDate>Wed, 14 Aug 2024 00:00:00 +0000</pubDate>
-      <guid>http://localhost:1313/framework/tech/</guid>
+      <guid>//localhost:1313/framework/tech/</guid>
       <description>Detailed explanation of the Tech pillar in the Strat9 framework.</description>
     </item>
   </channel>

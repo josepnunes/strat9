@@ -1,6 +1,9 @@
-#baseURL = 'https://www.strat9.io/'
-baseURL = 'https://josepnunes.github.io/strat9/'
+baseURL = "/"
 languageCode = 'en-us'
 title = 'Strat9'
 [permalinks]
   blog = "/blog/:slug/"
+
+[taxonomies]
+  category = "categories"
+  tag = "tags"
